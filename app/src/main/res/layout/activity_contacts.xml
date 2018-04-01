@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_contacts"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/home"
+    tools:context="com.example.gra.gra.ContactsActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/gra_logo_white"
+        android:id="@+id/imageView6"
+        android:layout_marginTop="14dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_marginTop="39dp"
+        android:hint="Pincode"
+        android:id="@+id/etSearchPincode"
+        android:layout_below="@+id/imageView6"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/etSearchPincode"
+        android:layout_marginTop="25dp"
+        android:id="@+id/etSearchColony"
+        android:hint="Colony"
+        android:layout_alignLeft="@+id/etSearchPincode"
+        android:layout_alignStart="@+id/etSearchPincode"
+        android:layout_alignRight="@+id/etSearchPincode"
+        android:layout_alignEnd="@+id/etSearchPincode" />
+
+    <Button
+        android:text="Search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etSearchColony"
+        android:layout_marginTop="47dp"
+        android:id="@+id/btSearchContact"
+        android:layout_alignLeft="@+id/etSearchColony"
+        android:layout_alignStart="@+id/etSearchColony"
+        android:layout_alignRight="@+id/etSearchColony"
+        android:layout_alignEnd="@+id/etSearchColony" />
+</RelativeLayout>

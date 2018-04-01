@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">GRA</string>
+    <string-array name="status">
+        <item>Open</item>
+        <item>Pending</item>
+        <item>Closed</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_govt_offc_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/home"
+    tools:context="com.example.gra.gra.govtOffcHomeActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        app:srcCompat="@drawable/gra_logo_white"
+        android:id="@+id/imageView5"
+        android:layout_marginTop="52dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="View Grievances"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView5"
+        android:layout_marginTop="52dp"
+        android:id="@+id/btViewGrievances"
+        android:layout_alignRight="@+id/imageView5"
+        android:layout_alignEnd="@+id/imageView5"
+        android:layout_alignLeft="@+id/imageView5"
+        android:layout_alignStart="@+id/imageView5"
+        />
+
+    <Button
+        android:text="Block a User"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btBlockUser"
+        android:layout_below="@+id/btViewGrievances"
+        android:layout_alignLeft="@+id/btViewGrievances"
+        android:layout_alignStart="@+id/btViewGrievances"
+        android:layout_marginTop="43dp"
+        android:layout_alignRight="@+id/btViewGrievances"
+        android:layout_alignEnd="@+id/btViewGrievances" />
+
+    <Button
+        android:text="Update Emergency Contacts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:id="@+id/btUpdateEmergency"
+        android:layout_below="@+id/btBlockUser"
+        android:layout_alignLeft="@+id/btBlockUser"
+        android:layout_alignStart="@+id/btBlockUser"
+        android:layout_alignRight="@+id/btBlockUser"
+        android:layout_alignEnd="@+id/btBlockUser" />
+</RelativeLayout>

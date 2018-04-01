@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_log_complaint"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/home"
+    tools:context="com.example.gra.gra.LogComplaintActivity">
+
+<!--    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:id="@+id/etCategory"
+        android:hint="Category" />-->
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/spinCategory"
+        android:layout_marginTop="25dp"
+        android:id="@+id/etLocality"
+        android:hint="Locality"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/etLocality"
+        android:layout_alignLeft="@+id/etLocality"
+        android:layout_alignStart="@+id/etLocality"
+        android:layout_marginTop="18dp"
+        android:id="@+id/etCity"
+        android:hint="city"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/etState"
+        android:layout_alignLeft="@+id/etState"
+        android:layout_alignStart="@+id/etState"
+        android:layout_marginTop="17dp"
+        android:id="@+id/etPincode"
+        android:hint="Pincode"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:inputType="text|textMultiLine"
+        android:ems="10"
+        android:layout_below="@+id/etPincode"
+        android:layout_alignLeft="@+id/etPincode"
+        android:layout_alignStart="@+id/etPincode"
+        android:layout_marginTop="25dp"
+        android:id="@+id/etDescription"
+        android:hint="Description"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Spinner
+        android:layout_width="350dp"
+        android:layout_height="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/spinCategory" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/etState"
+        android:hint="State"
+        android:layout_below="@+id/etCity"
+        android:layout_marginTop="36dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Submit "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bLogComplaint"
+        android:layout_below="@+id/etDescription"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+
+</RelativeLayout>

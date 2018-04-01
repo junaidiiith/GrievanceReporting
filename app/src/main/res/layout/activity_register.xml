@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/home"
+    tools:context="com.example.gra.gra.RegisterActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:layout_marginTop="17dp"
+        android:id="@+id/etEmail"
+        android:layout_below="@+id/etAadharNumber"
+        android:hint="Email"
+        android:layout_alignRight="@+id/etAadharNumber"
+        android:layout_alignEnd="@+id/etAadharNumber"
+        android:layout_alignLeft="@+id/etAadharNumber"
+        android:layout_alignStart="@+id/etAadharNumber" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_below="@+id/etEmail"
+        android:layout_marginTop="24dp"
+        android:id="@+id/etMobileNumber"
+        android:hint="Mobile Number"
+        android:layout_alignLeft="@+id/etEmail"
+        android:layout_alignStart="@+id/etEmail"
+        android:layout_alignRight="@+id/etEmail"
+        android:layout_alignEnd="@+id/etEmail" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_below="@+id/etMobileNumber"
+        android:layout_marginTop="23dp"
+        android:id="@+id/etPassword"
+        android:hint="Password"
+        android:layout_alignLeft="@+id/etMobileNumber"
+        android:layout_alignStart="@+id/etMobileNumber"
+        android:layout_alignRight="@+id/etMobileNumber"
+        android:layout_alignEnd="@+id/etMobileNumber" />
+
+    <Button
+        android:text="Register"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/bRegister"
+        android:layout_marginTop="23dp"
+        android:layout_below="@+id/etPassword"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_marginTop="136dp"
+        android:id="@+id/etAadharNumber"
+        android:hint="Aadhar Number"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/imageView2"
+        android:layout_alignStart="@+id/imageView2"
+        android:layout_alignRight="@+id/imageView2"
+        android:layout_alignEnd="@+id/imageView2" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        app:srcCompat="@drawable/gra_logo_white"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:id="@+id/imageView2" />
+</RelativeLayout>

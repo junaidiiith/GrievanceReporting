@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_goupdate_emergency"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:textSize = "20dp"
+    android:background="@drawable/home"
+    tools:context="com.example.gra.gra.GOUpdateEmergencyActivity">
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:text="100"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="33dp"
+        android:id="@+id/etAadhar" />
+
+    <TextView
+        android:text="Fire :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize = "20dp"
+        android:id="@+id/tvFire"
+        android:layout_alignBaseline="@+id/etAadhar"
+        android:layout_alignBottom="@+id/etAadhar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/etAadhar"
+        android:layout_toStartOf="@+id/etAadhar" />
+
+    <TextView
+        android:text="Ambulance :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etAadhar"
+        android:layout_marginTop="46dp"
+        android:id="@+id/tvAmbulance"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize = "20dp"
+        android:layout_toLeftOf="@+id/etAadhar"
+        android:layout_toStartOf="@+id/etAadhar" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:text="101"
+        android:ems="10"
+        android:layout_below="@+id/etAadhar"
+        android:layout_toRightOf="@+id/tvAmbulance"
+        android:layout_toEndOf="@+id/tvAmbulance"
+        android:layout_marginTop="35dp"
+        android:id="@+id/etAmbulance" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:text="102"
+        android:ems="10"
+        android:id="@+id/etPolice"
+        android:layout_alignBaseline="@+id/tvPolice"
+        android:layout_alignBottom="@+id/tvPolice"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Police :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:textSize = "20dp"
+        android:id="@+id/tvPolice"
+        android:layout_below="@+id/etAmbulance"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/etPolice"
+        android:layout_toStartOf="@+id/etPolice" />
+
+    <TextView
+        android:text="Water :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        android:textSize = "20dp"
+        android:id="@+id/tvCallWater"
+        android:layout_below="@+id/etPolice"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/etWater"
+        android:layout_toStartOf="@+id/etWater" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:text="103"
+        android:ems="10"
+        android:id="@+id/etWater"
+        android:layout_alignBaseline="@+id/tvCallWater"
+        android:layout_alignBottom="@+id/tvCallWater"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Electricity :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize = "20dp"
+        android:id="@+id/tvElectricity"
+        android:layout_alignBaseline="@+id/etElectricity"
+        android:layout_alignBottom="@+id/etElectricity"
+        android:layout_toLeftOf="@+id/etWater"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btUpdateContact"
+        android:layout_below="@+id/etElectricity"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="51dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:text="104"
+        android:ems="10"
+        android:id="@+id/etElectricity"
+        android:layout_below="@+id/etWater"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="31dp" />
+</RelativeLayout>
